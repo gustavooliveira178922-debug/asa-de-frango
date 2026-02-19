@@ -2,41 +2,82 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informações do Servidor</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            /* Imagem de Fundo */
+            background-image: url('https://media.discordapp.net/attachments/1452747429693620419/1474166726894813346/628031596_1556846502072004_3125183602681945186_n.png?ex=6998dc40&is=69978ac0&hm=ce8a0eea27364ac0576a33b455a7d495f2d661167a236a92a55411619fee957d&');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            max-width: 600px;
+            width: 90%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+            backdrop-filter: blur(5px); /* Efeito de vidro fosco */
+            margin: 20px;
+        }
+
+        .server-banner {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 2px solid rgba(255,255,255,0.1);
+        }
+
+        h1 { color: #ffcc00; margin-bottom: 10px; }
+        h2 { color: #5865F2; border-bottom: 1px solid #333; padding-bottom: 5px; }
+        
+        .ip-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 1.1em;
+            word-break: break-all;
+        }
+
+        ul {
+            text-align: left;
+            display: inline-block;
+        }
+
+        li { margin-bottom: 8px; }
+    </style>
 </head>
 
-<body style="
-    margin:0;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-family:Arial, Helvetica, sans-serif;
-    color:white;
+<body>
 
-    background-image:url('https://media.discordapp.net/attachments/1452747429693620419/1474166726894813346/628031596_1556846502072004_3125183602681945186_n.png?format=webp&quality=lossless');
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-">
+    <div class="container">
+        <img src="https://media.discordapp.net/attachments/1452747429693620419/1474166726894813346/628031596_1556846502072004_3125183602681945186_n.png?ex=6998dc40&is=69978ac0&hm=ce8a0eea27364ac0576a33b455a7d495f2d661167a236a92a55411619fee957d&" alt="Banner do Servidor" class="server-banner">
 
-    <div style="
-        background:rgba(0,0,0,0.65);
-        padding:30px;
-        max-width:800px;
-        border-radius:14px;
-    ">
         <h1>🎮 Informações do Servidor</h1>
 
         <p><strong>Versão:</strong> Java Edition + Bedrock (Geyser)</p>
         <p><strong>Modo:</strong> Survival / Aventura</p>
 
-        <h2>Java Edition</h2>
-        <p>reply-sections.gl.joinmc.link</p>
+        <hr style="opacity: 0.2; margin: 20px 0;">
 
-        <h2>Bedrock Edition</h2>
-        <p>categories-restaurants.gl.at.ply.gg:14606</p>
+        <h2>☕ Java Edition</h2>
+        <p class="ip-box">reply-sections.gl.joinmc.link</p>
+
+        <h2>📱 Bedrock Edition</h2>
+        <p class="ip-box">categories-restaurants.gl.at.ply.gg:14606</p>
 
         <h2>💬 Comunidade</h2>
         <p>Entre no nosso Discord para novidades, regras e eventos.</p>
